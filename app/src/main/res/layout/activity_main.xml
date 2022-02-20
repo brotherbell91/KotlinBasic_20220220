@@ -26,6 +26,12 @@
         android:layout_height="wrap_content"
         android:text="변수 문법 연습" />
 
+    <Button
+        android:id="@+id/btnConditionPractice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="조건문 연습" />
+
 
 
 </LinearLayout>
