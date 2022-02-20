@@ -95,7 +95,6 @@ class MainActivity : AppCompatActivity() {
             if(salary >= 5000){
                 Toast.makeText(this, "연봉이 5천이상", Toast.LENGTH_SHORT).show()
             }
-
 //            기준 2. 야근만 안하면 OK.
             if (!overWork){ //overWORK 변수에, true가 있을때만 실행. => NOT부정 : 야근을 하지 않으면.
                 Toast.makeText(this, "야근을 안함", Toast.LENGTH_SHORT).show()
