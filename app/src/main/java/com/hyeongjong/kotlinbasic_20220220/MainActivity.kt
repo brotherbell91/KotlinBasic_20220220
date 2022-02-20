@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
         btnConditionPractice.setOnClickListener {
 
-            val UserAge = 25
+            val UserAge = 8
 
             if(UserAge >= 20){
 
@@ -71,10 +71,17 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "성인입니다.", Toast.LENGTH_SHORT).show()
 
             }
+            else if(UserAge >= 17){
+//                위의 질문이 틀렸을떄의 보완 질문 추가. => 고등학생인가?
+                Toast.makeText(this, "고등학생입니다.", Toast.LENGTH_SHORT).show()
+            }
+            else if (UserAge >= 14){
+                Toast.makeText(this, "중학생입니다.", Toast.LENGTH_SHORT).show()
+            }
             else{
 //                위의 질문이 틀렸을 때 대응할 코드 추가
 
-                Toast.makeText(this, "미성년자입니다.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "초등학생 혹은 그 이하입니다.", Toast.LENGTH_SHORT).show()
             }
         }
     }
