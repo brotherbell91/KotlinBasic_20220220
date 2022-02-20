@@ -44,12 +44,14 @@
         android:text="출생 년도" />
 
     <EditText
+        android:id="@+id/edtBirthYear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="태어난 년도 입력 (ex. 1988)"
         android:inputType="number" />
 
     <Button
+        android:id="@+id/btnCalculateAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="나이 판정하기" />
