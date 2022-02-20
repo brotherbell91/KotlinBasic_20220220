@@ -79,10 +79,36 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "중학생입니다.", Toast.LENGTH_SHORT).show()
             }
             else{
-//                위의 질문이 틀렸을 때 대응할 코드 추가
+//                위의 질문이 모두 틀렸을 때 대응할 코드 추가
 
                 Toast.makeText(this, "초등학생 혹은 그 이하입니다.", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        btnConditionPractice2.setOnClickListener {
+
+            val salary = 4000
+            val minutes = 50
+            val overWork = false
+
+//            기준 1. 연봉이 5천 이상이면 OK.
+            if(salary >= 5000){
+                Toast.makeText(this, "연봉이 5천이상", Toast.LENGTH_SHORT).show()
+            }
+
+//            기준 2. 야근만 안하면 OK.
+            if (!overWork){ //overWORK 변수에, true가 있을때만 실행. => NOT부정 : 야근을 하지 않으면.
+                Toast.makeText(this, "야근을 안함", Toast.LENGTH_SHORT).show()
+            }
+//            기준 3. 연봉 4000이상, 거리 30분 이내
+            if(salary >= 4000 && minutes < 30) {
+                Toast.makeText(this, "연봉 AND 출퇴근시간 OK", Toast.LENGTH_SHORT).show()
+            }
+//            기분 4. 연봉 5000이상 OR 거리 1시간 이내
+            if(salary >= 5000 || minutes < 60) {
+                Toast.makeText(this, "연봉 OR 출퇴근시간 OK", Toast.LENGTH_SHORT).show()
+            }
+
         }
     }
 }

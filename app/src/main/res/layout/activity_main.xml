@@ -32,6 +32,13 @@
         android:layout_height="wrap_content"
         android:text="조건문 연습" />
 
+    <Button
+        android:id="@+id/btnConditionPractice2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="조건문 연습2" />
+
+
 
 
 </LinearLayout>
