@@ -3,6 +3,7 @@ package com.hyeongjong.kotlinbasic_20220220
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -28,6 +29,12 @@ class MainActivity : AppCompatActivity() {
             Log.e("메인화면", "e로 로그 찍어보기")
 //            참고/정보용 로그 info
             Log.i("메인화면", "i로 로그 찍어보기")
+        }
+
+        btnToast.setOnClickListener {
+
+//            토스트를 띄워보자.
+            Toast.makeText(this,"토스트 버튼 눌림",Toast.LENGTH_SHORT).show()
         }
     }
 }
