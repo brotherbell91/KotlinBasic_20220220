@@ -71,6 +71,11 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "성인입니다.", Toast.LENGTH_SHORT).show()
 
             }
+            else{
+//                위의 질문이 틀렸을 때 대응할 코드 추가
+
+                Toast.makeText(this, "미성년자입니다.", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
