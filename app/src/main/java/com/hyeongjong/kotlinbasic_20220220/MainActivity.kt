@@ -124,5 +124,13 @@ class MainActivity : AppCompatActivity() {
 //            3. 계산 된 나이를 토스트로 출력
             Toast.makeText(this, "${age}살 입니다.", Toast.LENGTH_SHORT).show()
         }
+
+        btnApply.setOnClickListener {
+
+            val inputMessage = edtMessage.text.toString()
+
+//            txtMessage 태그의 text 속성에, 입력한 메세지를 적용.
+            txtMessage.text = inputMessage
+        }
     }
 }
